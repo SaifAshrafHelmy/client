@@ -46,6 +46,8 @@ button:hover{
 
 }
 
+
+/* List Item */
 .list-item{
   width: 100%;
   margin: 10px 0;
@@ -95,11 +97,12 @@ button:hover{
 
 .create{
   border: 1.5px solid rgb(108, 115, 148);
-  color: rgb(108, 115, 148);
+  color: rgb(189, 192, 206);
   text-transform: uppercase;
 }
 .create:hover{
   background-color: rgb(131 , 138, 172);
+  color: white;
 }
 .create:active{
   background-color: rgb(108, 115, 148);
@@ -109,7 +112,7 @@ button:hover{
 
 .signout{
   border: 1.5px solid rgb(255, 175, 163);
-  background-color: rgb(255, 175, 163) !important;
+  background-color: rgb(255, 157, 142) !important;
   color: rgb(255, 255, 255);
 }
 
@@ -121,4 +124,63 @@ button:hover{
   border: 1.5px solid rgb(179, 59, 59);
   background-color: rgb(179, 59, 59) !important;
   color: rgb(255 , 255 , 255);
+}
+
+
+input{
+  margin: 11px 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px solid rgb(230, 232, 236);
+}
+ 
+
+/* Modal */
+
+.overlay{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal{
+  width: 500px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0,
+  rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.modal .form-title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.modal .form-title-container button{
+  border: none;
+  background-color: transparent;
+}
+
+.modal .form-title-container button:active{
+  color: rgb(255, 50, 50);
+}
+
+.modal form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal form labl{
+  font-size: 13px;
 }
