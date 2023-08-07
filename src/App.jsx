@@ -11,7 +11,7 @@ const App = () => {
       let response = await fetch(`http://localhost:8000/todos/${userEmail}`);
       response = await response.json();
       setTasks(response);
-      console.log(response)
+      // console.log(response)
     } catch (error) {
       console.error(error);
     }
